@@ -70,37 +70,37 @@ The system captures student face datasets, trains an LBPH face recognition model
 ## Screenshots
 
 ### Splash Screen
-![Splash Screen](smart_attendance_splash_screen.png)
+![Splash Screen](Project%20Images/smart_attendance_splash_screen.png)
 
 ### Secure Login Interface
-![Login Screen](secure_login_interface.png)
+![Login Screen](Project%20Images/secure_login_interface.png)
 
 ### Attendance Dashboard
-![Dashboard](attendance_dashboard_overview.png)
+![Dashboard](Project%20Images/attendance_dashboard_overview.png)
 
 ### Student Management Module
-![Student Management](student_management_module.png)
+![Student Management](Project%20Images/student_management_module.png)
 
 ### Face Dataset Collection Module
-![Face Dataset](face_dataset_collection_module.png)
+![Face Dataset](Project%20Images/face_dataset_collection_module.png)
 
 ### LBPH Model Training Module
-![Model Training](lbph_model_training_module.png)
+![Model Training](Project%20Images/lbph_model_training_module.png)
 
 ### Real-Time Attendance Recognition
-![Attendance Recognition](real_time_attendance_recognition.png)
+![Attendance Recognition](Project%20Images/real_time_attendance_recognition.png)
 
 ### Attendance Analytics Dashboard
-![Analytics](attendance_analytics_dashboard.png)
+![Analytics](Project%20Images/attendance_analytics_dashboard.png)
 
 ### Attendance Reports Module
-![Reports](attendance_reports_module.png)
+![Reports](Project%20Images/attendance_reports_module.png)
 
 ### User Management Module
-![User Management](user_management_module.png)
+![User Management](Project%20Images/user_management_module.png)
 
 ### Application Settings Panel
-![Settings](application_settings_panel.png)
+![Settings](Project%20Images/application_settings_panel.png)
 
 ---
 
