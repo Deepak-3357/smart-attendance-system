@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DashboardPage</class>
+ <widget class="QWidget" name="DashboardPage">
+  <layout class="QVBoxLayout" name="mainLayout">
+   <item>
+    <layout class="QHBoxLayout" name="headerLayout">
+     <item>
+      <layout class="QVBoxLayout" name="titleLayout">
+       <item>
+        <widget class="QLabel" name="heading">
+         <property name="text">
+          <string>Welcome back</string>
+         </property>
+         <property name="styleSheet">
+          <string>font-size:24pt;font-weight:700;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="subheading">
+         <property name="text">
+          <string>Here is today's attendance overview.</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="headerSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QFrame" name="sessionCard">
+       <layout class="QGridLayout" name="sessionLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="loggedUserTitle">
+          <property name="text">
+           <string>Logged In User:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="loggedUserValue">
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="roleTitle">
+          <property name="text">
+           <string>Role:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="roleValue">
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QPushButton" name="logoutButton">
+          <property name="text">
+           <string>Logout</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="cards">
+     <item row="0" column="0">
+      <widget class="QFrame" name="card">
+       <layout class="QVBoxLayout" name="studentsCardLayout">
+        <item>
+         <widget class="QLabel" name="studentsTitle">
+          <property name="text">
+           <string>Total Students</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="studentsValue">
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="styleSheet">
+           <string>font-size:25pt;font-weight:700;color:#3b82f6;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QFrame" name="attendanceCard">
+       <layout class="QVBoxLayout" name="attendanceCardLayout">
+        <item>
+         <widget class="QLabel" name="attendanceTitle">
+          <property name="text">
+           <string>Attendance Today</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="attendanceValue">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QFrame" name="accuracyCard">
+       <layout class="QVBoxLayout" name="accuracyCardLayout">
+        <item>
+         <widget class="QLabel" name="accuracyTitle">
+          <property name="text">
+           <string>Recognition Accuracy</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="accuracyValue">
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QFrame" name="defaultersCard">
+       <layout class="QVBoxLayout" name="defaultersCardLayout">
+        <item>
+         <widget class="QLabel" name="defaultersTitle">
+          <property name="text">
+           <string>Defaulters</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="defaultersValue">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QFrame" name="activityCard">
+     <layout class="QVBoxLayout" name="activityLayout">
+      <item>
+       <widget class="QLabel" name="activityTitle">
+        <property name="text">
+         <string>Last Attendance Activity</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="activityValue">
+        <property name="text">
+         <string>No attendance activity yet.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

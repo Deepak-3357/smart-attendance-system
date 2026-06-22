@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{48B1B9EC-89E2-41B3-8734-B35883C419F6}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4E0A0F83-7307-40BA-9377-1CF3532E5E4C}</UniqueIdentifier>
+      <Extensions>cpp;c</Extensions>
+    </Filter>
+    <Filter Include="Face Recognition Files">
+      <UniqueIdentifier>{C75B8B21-F669-44DD-A1DD-25BE4E42FF68}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="Data Files">
+      <UniqueIdentifier>{6952E12F-E6E1-4275-93D3-586D97980799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Services">
+      <UniqueIdentifier>{25BDBD50-3C8B-49EB-8B2D-6139D3347839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Recognition">
+      <UniqueIdentifier>{5D881CC0-0D60-48B2-89D1-A82F8ED185E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Reports">
+      <UniqueIdentifier>{9AB21141-3533-420E-A384-4F7F68A3E6FE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dashboard">
+      <UniqueIdentifier>{8AE3899F-87E3-4CC2-957C-7C753F6FC8E9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Analytics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Attendance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CsvUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceRecognition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Student.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dashboard\DashboardService.h">
+      <Filter>Dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Recognition\LivenessDetector.h">
+      <Filter>Recognition</Filter>
+    </ClInclude>
+    <ClInclude Include="Recognition\RecognitionUtils.h">
+      <Filter>Recognition</Filter>
+    </ClInclude>
+    <ClInclude Include="Reports\ReportService.h">
+      <Filter>Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\AdminAuth.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\AttendanceInsights.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\AuditLogger.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\ConsoleUI.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\EmailService.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\ModelStatisticsService.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\ProfileService.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Analytics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Attendance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartAttendanceSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptureFaces.cpp">
+      <Filter>Face Recognition Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RecognizeFace.cpp">
+      <Filter>Face Recognition Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainModel.cpp">
+      <Filter>Face Recognition Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dashboard\DashboardService.cpp">
+      <Filter>Dashboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Recognition\LivenessDetector.cpp">
+      <Filter>Recognition</Filter>
+    </ClCompile>
+    <ClCompile Include="Recognition\RecognitionUtils.cpp">
+      <Filter>Recognition</Filter>
+    </ClCompile>
+    <ClCompile Include="Reports\ReportService.cpp">
+      <Filter>Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\AdminAuth.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\AttendanceInsights.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\AuditLogger.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\ConsoleUI.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\EmailService.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\ModelStatisticsService.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\ProfileService.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="attendance.csv">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="haarcascade_frontalface_default.xml">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="haarcascade_eye.xml">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="students.csv">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="README.md">
+      <Filter>Data Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
