@@ -1,142 +1,196 @@
-# AI Powered Smart Attendance Management System
+# Smart Attendance Management System
 
-Industry-style C++ Smart Attendance Management System using OpenCV 4.12.0, OpenCV Contrib, Haar Cascade face detection, and LBPH face recognition.
+## Team Members
+
+- Deepak R (192511008)
+- Emad Mohammed Abdullah Farooqui (192511019)
+
+---
+
+## My Contributions (Deepak R)
+
+I was responsible for the complete development and implementation of **Module 2 – Face Dataset Collection Module** and jointly contributed to **Module 3 – Face Recognition Model Training (LBPH)**.
+
+### Key Contributions
+
+#### Module 2 – Face Dataset Collection Module (100% Contribution)
+
+- Designed and developed the face dataset collection workflow.
+- Implemented camera integration using OpenCV.
+- Developed automatic face detection and image capture functionality.
+- Created student-wise dataset organization and storage mechanisms.
+- Implemented image preprocessing and grayscale conversion.
+- Developed progress tracking and dataset collection monitoring.
+
+#### Module 3 – Face Recognition Model Training (Shared Contribution)
+
+- Assisted in implementing the LBPH Face Recognition algorithm.
+- Contributed to dataset preparation and model training processes.
+- Participated in training validation and accuracy evaluation.
+- Assisted in integrating the trained model into the attendance system.
+- Contributed to testing and optimization of recognition performance.
+
+---
+
+## Technologies Used
+
+- C++
+- OpenCV
+- Qt Framework
+- CSV Data Management
+- LBPH Face Recognition
+- CMake
+- Visual Studio
+
+---
 
 ## Features
 
-- Student registration with duplicate prevention.
-- CSV based student and attendance storage.
-- Webcam face dataset capture with 100 samples per student.
-- LBPH model training from the `faces` folder.
-- Real-time webcam recognition with unknown face thresholding.
-- Dynamic confidence threshold tuning and camera selection.
-- Blink-based liveness verification using Haar eye cascade.
-- Unknown face logging in the `unknown` folder.
-- Automatic attendance marking with same-day duplicate prevention.
-- Daily report export in `reports/DD-MM-YYYY.csv`.
-- Attendance analytics with present days, absent days, and percentage.
-- CSV export to `attendance_report.csv`.
-- Email draft generation in `outbox`.
-- Student profile preview with latest dataset image.
-- Student search by register number or name.
+- Secure User Authentication
+- Student Management System
+- Face Dataset Collection
+- LBPH Face Recognition Training
+- Real-Time Attendance Recognition
+- Attendance Analytics Dashboard
+- Attendance Report Generation
+- User Management
+- Application Settings
+- CSV-Based Data Storage
 
-## Expected OpenCV Paths
+---
 
-The Visual Studio project is configured for:
+## Project Overview
 
-- Include: `C:\opencv_build\install\include`
-- Library: `C:\opencv_build\lib\Release`
-- Libraries:
-  - `opencv_core4120.lib`
-  - `opencv_imgproc4120.lib`
-  - `opencv_highgui4120.lib`
-  - `opencv_videoio4120.lib`
-  - `opencv_objdetect4120.lib`
-  - `opencv_face4120.lib`
-  - `opencv_imgcodecs4120.lib`
+Smart Attendance Management System is an AI-powered attendance solution that automates student attendance using facial recognition technology.
 
-At runtime, make sure the matching OpenCV DLL folder is available in `PATH`.
+The system captures student face datasets, trains an LBPH face recognition model, and performs real-time attendance marking through webcam-based recognition. The application also provides attendance analytics, reporting tools, and administrative controls through an integrated graphical user interface.
 
-## Required Runtime File
+---
 
-The project includes:
+## Screenshots
 
-- `haarcascade_frontalface_default.xml`
-- `haarcascade_eye.xml`
+### Splash Screen
+![Splash Screen](smart_attendance_splash_screen.png)
 
-Keep both files in the project working directory. Visual Studio is configured with `$(ProjectDir)` as the debugger working directory.
+### Secure Login Interface
+![Login Screen](secure_login_interface.png)
 
-## Admin Login
+### Attendance Dashboard
+![Dashboard](attendance_dashboard_overview.png)
 
-Default login:
+### Student Management Module
+![Student Management](student_management_module.png)
+
+### Face Dataset Collection Module
+![Face Dataset](face_dataset_collection_module.png)
+
+### LBPH Model Training Module
+![Model Training](lbph_model_training_module.png)
+
+### Real-Time Attendance Recognition
+![Attendance Recognition](real_time_attendance_recognition.png)
+
+### Attendance Analytics Dashboard
+![Analytics](attendance_analytics_dashboard.png)
+
+### Attendance Reports Module
+![Reports](attendance_reports_module.png)
+
+### User Management Module
+![User Management](user_management_module.png)
+
+### Application Settings Panel
+![Settings](application_settings_panel.png)
+
+---
+
+## How to Run
+
+### Prerequisites
+
+- Visual Studio 2022
+- OpenCV 4.x
+- Qt Framework
+- CMake
+
+### Build the Project
+
+Open the solution file:
+
+```bash
+SmartAttendanceSystem.sln
+```
+
+Build and run using Visual Studio.
+
+---
+
+## Expected Output
+
+The application provides:
+
+- Secure login authentication
+- Student registration and management
+- Face dataset collection using webcam
+- LBPH model training
+- Real-time face recognition
+- Automatic attendance marking
+- Attendance analytics and visualization
+- Attendance report generation
+- User and system management
+
+---
+
+## Project Structure
 
 ```text
-Username: admin
-Password: admin123
+SmartAttendanceSystem/
+│
+├── Auth/
+├── Dashboard/
+├── Gui/
+├── Managers/
+├── Recognition/
+├── Services/
+├── attendance/
+├── data/
+├── trainer/
+├── ui/
+│
+├── Analytics.cpp
+├── Attendance.cpp
+├── CaptureFaces.cpp
+├── RecognizeFace.cpp
+├── TrainModel.cpp
+├── SmartAttendanceSystem.cpp
+│
+├── students.csv
+├── attendance.csv
+├── README.md
+└── SmartAttendanceSystem.sln
 ```
 
-On first run, the app creates `admin_credentials.dat` and stores a salted password hash instead of plain text credentials.
+---
 
-## Dataset Format
+## Face Recognition Workflow
 
-Captured images are saved as:
+1. Register Student Information
+2. Capture Face Dataset Images
+3. Store Images in Dataset Folder
+4. Train LBPH Recognition Model
+5. Start Real-Time Recognition
+6. Identify Student
+7. Mark Attendance Automatically
+8. Generate Reports and Analytics
 
-```text
-faces/192511008.1.jpg
-faces/192511008.2.jpg
-...
-faces/192511008.100.jpg
-```
+---
 
-The numeric part before the first dot is used as the LBPH label, so register numbers must be numeric and fit within a 32-bit integer.
+## Academic Purpose
 
-## CSV Formats
+This project was developed as part of an academic capstone project to demonstrate the practical application of Computer Vision, Face Recognition, and Automated Attendance Management using C++, OpenCV, and Qt Framework.
 
-`students.csv`
+---
 
-```csv
-RegNo,Name
-192511008,Deepak
-```
+## License
 
-`attendance.csv`
-
-```csv
-Date,Time,RegNo,Name,Status
-07-06-2026,09:30,192511008,Deepak,Present
-```
-
-## Visual Studio Build
-
-1. Open `SmartAttendanceSystem.sln`.
-2. Select `x64` and `Release`.
-3. Confirm OpenCV include/library paths match your machine.
-4. Build and run.
-
-## Qt 6 Desktop Application
-
-The Qt Widgets desktop application is implemented in `Gui/`, `Managers/`, and
-`ui/`. It reuses the existing CSV files, dataset folder, trained LBPH model,
-Haar cascades, and liveness logic without changing the data formats.
-
-Build with Qt 6.11.1, OpenCV 4.12.0, CMake, Ninja, and the MSVC developer
-environment:
-
-```powershell
-cmake -S . -B build-gui-ninja -G Ninja `
-  -DCMAKE_BUILD_TYPE=Release `
-  -DCMAKE_MAKE_PROGRAM=C:\Qt\Tools\Ninja\ninja.exe `
-  -DCMAKE_PREFIX_PATH=C:\Qt\6.11.1\msvc2022_64 `
-  -DOpenCV_DIR=C:\opencv_build
-cmake --build build-gui-ninja --parallel
-cmake --install build-gui-ninja --prefix "C:\Users\deepa\OneDrive\Documents\SmartAttendanceSystem\dist-gui"
-```
-
-Run `build-gui-ninja/SmartAttendanceGUI.exe` for development, or run the
-deployed copy from `dist-gui`. The default credentials remain `admin` /
-`admin123`. Choose Administrator for full access or User for a limited session
-after signing in.
-
-## Menu
-
-```text
-1. Register Student
-2. Capture Face Dataset
-3. Train Model
-4. Recognize Face
-5. View Students
-6. View Attendance
-7. Analytics
-8. Search Student
-9. View Date Wise Reports
-10. Export Attendance Report
-11. Real-Time Dashboard
-12. View Student Profile
-13. Email Attendance Report
-14. Tune Recognition Threshold
-15. Exit
-```
-
-## Email Reports
-
-The app creates `email_config.csv` on first run. Replace `change-me@example.com` with the target email address. The email service generates a `.eml` draft in `outbox` containing the exported attendance report, ready for a mail client or SMTP gateway.
+This project is intended for educational and academic purposes.
